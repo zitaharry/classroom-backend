@@ -4,9 +4,13 @@ import subjectsRouter from "./routes/subjects";
 import usersRouter from "./routes/users";
 import classesRouter from "./routes/classes";
 import securityMiddleware from "./middleware/security";
+import { toNodeHandler } from "better-auth/node";
+import { auth } from "./lib/auth.js";
 
 const app = express();
 const PORT = 8000;
+
+app.all("/api/auth/*splat", toNodeHandler(auth));
 
 app.use(
   cors({
