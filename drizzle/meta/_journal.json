@@ -8,6 +8,13 @@
       "when": 1768904802959,
       "tag": "0000_wealthy_magdalene",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1768917606655,
+      "tag": "0001_vengeful_lockheed",
+      "breakpoints": true
     }
   ]
 }
